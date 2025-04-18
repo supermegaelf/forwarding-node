@@ -1,7 +1,7 @@
 #!/bin/bash
 
-read -p "Main public IP: " main_public_ip
-read -p "Enter port number (default is 10000, press Enter to use default): " port
+read -p $'\033[32mMain public IP: \033[0m' main_public_ip
+read -p $'\033[32mEnter port number (default is 10000, press Enter to use default): \033[0m' port
 port=${port:-10000}
 
 apt install ufw -y
